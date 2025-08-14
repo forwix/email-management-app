@@ -1,8 +1,8 @@
-const express = require('express');
-const { body, query, validationResult } = require('express-validator');
-const Email = require('../models/Email');
-const auth = require('../middleware/auth');
-const sesService = require('../services/sesService');
+import express from 'express';
+import { body, query, validationResult } from 'express-validator';
+import Email from '../models/Email.js';
+import auth from '../middleware/auth.js';
+import sesService from '../services/sesService.js';
 
 const router = express.Router();
 
@@ -403,4 +403,4 @@ router.get('/stats/overview', auth, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

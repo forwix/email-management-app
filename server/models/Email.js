@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const emailSchema = new mongoose.Schema({
   userId: {
@@ -112,4 +112,4 @@ emailSchema.virtual('replies', {
 
 emailSchema.set('toJSON', { virtuals: true });
 
-module.exports = mongoose.model('Email', emailSchema);
+export default mongoose.model('Email', emailSchema);

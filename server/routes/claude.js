@@ -1,7 +1,7 @@
-const express = require('express');
-const axios = require('axios');
-const { body, validationResult } = require('express-validator');
-const auth = require('../middleware/auth');
+import express from 'express';
+import axios from 'axios';
+import { body, validationResult } from 'express-validator';
+import auth from '../middleware/auth.js';
 
 const router = express.Router();
 
@@ -239,4 +239,4 @@ router.get('/health', auth, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

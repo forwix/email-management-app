@@ -1,4 +1,4 @@
-const { SESClient, SendEmailCommand } = require('@aws-sdk/client-ses');
+import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 
 class SESService {
   constructor() {
@@ -268,4 +268,4 @@ If you have any questions, feel free to contact our support team.
   }
 }
 
-module.exports = new SESService();
+export default new SESService();
