@@ -1,0 +1,16 @@
+import React from 'react'
+
+function SimpleApp() {
+  return (
+    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+      <h1>Email Management App</h1>
+      <p>System Status: ✅ Working!</p>
+      <p>Backend API: Connected</p>
+      <button onClick={() => alert('App is working!')}>
+        Test Button
+      </button>
+    </div>
+  )
+}
+
+export default SimpleApp
